@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>50js</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="fontawesome-free-6.5.2-web/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+ <hr>
+    <h2 class="text-dark">1.Click the button to on/off the bulb</h2>
+    <button onclick="bulbOn()" class="btn btn-dark">bulb on</button>
+    
+    <button onclick="bulbOff()" class="btn btn-danger">bulb off</button>
+    <img id="b_img" src="images/bulboff.gif">
+<hr>
+    <h2 class="text-dark">2.Click the button to show the date</h2>
+    <button onclick="showDate()" class="btn btn-dark">Show the date</button>
+    <h3 id="t_d"></h3>
+<hr>
+<h1>My First JavaScript</h1>
+<button onclick="textChange()" type="button" class="btn btn-dark" >3.Click to change the text</button>
+<h3 id="t_c" >Hello</h3>
+
+<hr>
+<h2 class="text_dark">4.Click to change the color</h2>
+<button class="btn btn-dark" onclick="colorChange()">Text Color</button>
+<h3 id="t_clr">Lorem ipsum dolor sit amet.</h3>
+
+<hr>
+<h2 class="text_dark">5.Click to show/hide the text</h2>
+<button class="btn btn-dark" onclick="sText()">Show Text</button>
+<button class="btn btn-dark" onclick="hText()">Hide Text</button>
+<h3 id="sh_text">Lorem ipsum dolor sit amet.</h3>
+
+
+<hr>
+<h2 class="text_dark">6.Click to download the sentence</h2>
+<button class="btn btn-dark" onclick="d_text()">doc.write</button>
+
+<hr>
+<h2 class="text_dark">7.Click to show the alert</h2>
+<button class="btn btn-dark" onclick="s_Alert()">Danger</button>
+
+<hr>
+<h2 class="text_dark">8.Click to show the console</h2>
+<button class="btn btn-dark" onclick="con_log()">Console</button>
+
+<hr>
+<h2 class="text-dark">9.Click the button to print this</h2>
+<button class="btn btn-dark" onclick="s_print()">Print</button>
+
+<hr>
+<h2 class="text-dark">10.Click the button to show the result</h2>
+<button class="btn btn-dark" onclick="rAddition()">output</button>
+<h3 id="r_a">The result is</h3>
+
+
+<hr>
+<h2 class="text-dark">11.Click the button to show the text</h2>
+<button class="btn btn-dark" onclick="vMessage()">output</button>
+<h3 id="vm"></h3>
+
+<hr>
+<h2 class="text-dark">12.Click the button to show the result using (let)</h2>
+<button class="btn btn-dark" onclick="rLet()">output2</button>
+<h3 id="r_l">The result</h3>
+
+
+<hr>
+<h2 class="text-dark">13.Click the button to show the text</h2>
+<button class="btn btn-dark" onclick="v_Message()">output</button>
+<h3 id="v_m"></h3>
+
+<hr>
+<h2>14.Click the button to show the text</h2>
+<button onclick="classExample()" class="btn btn-dark" >lorem</button>
+<p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus?</p>
+<p class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, repellendus?</p>
+
+<hr>
+<h2>15.Click the button to see the element</h2>
+<button class="btn btn-dark" onclick="elementCount()">Click me</button>
+
+<hr>
+<h2>16.Click the button to see the paragraph count</h2>
+<button class="btn btn-dark" onclick="elementCount()">Click me</button>
+
+<hr>
+<h2 class="text-dark">17.Click the button double to show the text</h2>
+<button class="btn btn-dark" ondblclick="va_Message()">output</button>
+<h3 id="vmm"></h3>
+
+<hr>
+<h2>18.Onmouse button to see the paragraph count</h2>
+<button class="btn btn-dark" onmouseenter="element_Count()">Click me</button>
+
+<hr>
+<h2>19.Leave mouse to see the paragraph count</h2>
+<button class="btn btn-dark" onmouseleave="e_Count()">Click me</button>
+
+<hr>
+<h2>20. Input field section</h2>
+
+<p>When you enter the input field, a function is triggered which sets the background color to yellow. When you leave the input field, a function is triggered which sets the background color to red</p>
+<strong>Enter your name:</strong> <input type="text" id="Input" onfocus="focusFunction()" onblur="blurFunction()">
+
+
+<hr>
+<h2>21. Input first & last name</h2>
+
+<p>A function is triggered when one of the input fields get focus. The function changes the background-color of the input field</p>
+<strong>First name</strong>: <input type="text" id="first_name" onfocus="myFunction(this.id)"><br>
+<br>
+<strong>Last name</strong>: <input type="text" id="last_name" onfocus="Function(this.id)">
+
+
+<hr>
+<h2>21. onError Image</h2>
+<img src="images/img.gif" onerror="f_img">
+<p>Not Loaded</p>
+
+<hr>
+<h2>22. Oninvalid Event Attribute</h2>
+<strong>Enter your Password : </strong><input type="text" id="Enter Password:" onkeydown="d_key()">
+
+<hr>
+<h2>23. How to Reset the info</h2>
+<form onreset="r_Info()">
+  Enter name: <input type="text">
+  <input type="reset">
+</form>
+
+<hr>
+<h2>24. How to search anything</h2>
+<p>Write Something & Press 'ENTER'</p>
+
+<input type="search" id="input" onsearch="s_Info()">
+<p id="s_enter"></p>
+
+<hr>
+<h1 >25.How to show comment</h1>
+<button class="btn btn-dark" onclick="e_com()">Click here!</button>
+<p id="pa_g"></p>
+
+<hr>
+<h1 >26. How to show addition</h1>
+<button class="btn btn-dark" onclick="e_Add()">Result</button>
+<p id="add_r">The Result is</p>
+
+<hr>
+<h1 >27. How to show output</h1>
+<button class="btn btn-dark" onclick="e_out()">Output</button>
+<p id="s_out">The Result is</p>
+
+<hr>
+<h1 >28. How to show output through alert</h1>
+<button class="btn btn-dark" onclick="a_Res()">PRESS</button>
+<p id="Resu_alert"></p>
+
+<hr>
+<h1 >29. How to show output using let</h1>
+<button class="btn btn-dark" onclick="e_let()">Output</button>
+<p id="s_Let">The Result is</p>
+
+<hr>
+<h1 >30. How to show minus result using let</h1>
+<button class="btn btn-dark" onclick="e_min()">Output</button>
+
+<p id="s_Min">The Result is</p>
+
+<hr>
+<h1 >31. How to show multiply result using var</h1>
+<button class="btn btn-dark" onclick="e_mul()">Output</button>
+
+<p id="s_Mul">The Result is</p>
+
+<hr>
+<h1 >32. How to show division result using var</h1>
+<button class="btn btn-dark" onclick="e_div()">Output</button>
+
+<p id="s_Div">The Result is</p>
+
+
+<hr>
+<h1 >33. How to show result using const</h1>
+<button class="btn btn-dark" onclick="e_Con()">Result</button>
+
+<p id="s_con"></p>
+
+<hr>
+<h1 >33. How to show result using operator</h1>
+<button class="btn btn-dark" onclick="e_Opa()">Result</button>
+
+<p id="s_opa"></p>
+
+<hr>
+<h1 >34. How to show result using string operator</h1>
+<button class="btn btn-dark" onclick="e_Str()">Show Output</button>
+
+<p id="s_str"></p>
+
+<hr>
+<h1 >35. How to show result using string operator (+=)</h1>
+<button class="btn btn-dark" onclick="e_Plus()">Show Output</button>
+
+<p id="s_plus"></p>
+
+<hr>
+<h1 >36. How to show result using %</h1>
+<button class="btn btn-dark" onclick="e_Mod()">Show Output</button>
+
+<p id="s_mod"></p>
+
+<hr>
+<h1 >37. How to show result using string operator (-=)</h1>
+<button class="btn btn-dark" onclick="e_Eq()">Show Output</button>
+
+<p id="s_eq"></p>
+
+<hr>
+<h1 >38. How to show result using string operator (*=)</h1>
+<button class="btn btn-dark" onclick="e_Multi()">Show Output</button>
+
+<p id="s_multi"></p>
+
+<hr>
+<h1 >39. How to show result using string operator (**=)</h1>
+<button class="btn btn-dark" onclick="e_Multim()">Show Output</button>
+
+<p id="s_multim"></p>
+
+<hr>
+<h1 >40. How to show result using data type</h1>
+<button class="btn btn-dark" onclick="e_Data()">Show Output</button>
+
+<p id="s_data"></p>
+
+<hr>
+<h1 >jquery</h1>
+<h3>Click the button to show alert</h3>
+<button class="btn btn-dark" onclick="s_Alt()">Danger</button>
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+</div>
+   
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/jquery.js"></script>
+  
+</body>
+</html>
